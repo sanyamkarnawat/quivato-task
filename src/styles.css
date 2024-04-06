@@ -8,7 +8,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --background-color: #f0f0f0;
   --text-color: #333;
   --accent-color: #007bff;
+  --cyan: #00FFFF;
+  --red: #FF0000;
+  --blue: #0000FF;
+  --orange: #FFA500;
+  --grayishBlue: hsl(229, 6%, 66%);
 }
+
 
 .dark-mode {
   --background-color: #121212;
