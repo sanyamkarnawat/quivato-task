@@ -11,6 +11,7 @@ import { ServiceComponent } from './service/service.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { ThemeService } from './theme/theme.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     MatTabsModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

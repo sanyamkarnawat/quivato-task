@@ -52,3 +52,7 @@
     background-color: var(--accent-color); /* Use accent color variable for active tab */
     color: #fff; /* Set text color for active tab */
 }
+
+.tab{
+    z-index: 1;
+}

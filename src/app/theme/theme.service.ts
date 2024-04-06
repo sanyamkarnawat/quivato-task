@@ -7,12 +7,11 @@ export class ThemeService {
   private readonly THEME_KEY = 'theme';
 
   constructor() {
-    // Initialize theme preference from local storage or set default
     const savedTheme = localStorage.getItem(this.THEME_KEY);
     if (savedTheme) {
       this.setTheme(savedTheme);
     } else {
-      this.setTheme('light'); // Default theme
+      this.setTheme('light');
     }
   }
 

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+
+:root {
+  --color: #333;
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  color: var(--color);
+}
+
+.hero-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-section {
+  background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+  color: #000000;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.container {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form {
+  margin: 10px 25px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.personal-details {
+  margin: 10px 25px;
+  padding: 10px 25px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info-item {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-info-item:last-child {
+  margin-right: 0;
+}
+
+.contact-info-item h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-info-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+}
+
+.social-links a {
+  padding-right: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  height: 25vh;
+  background: #1e183b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#credits h4 {
+  color: white;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.soc-med-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+
+.soc-med-icon:hover {
+  transform: scale(1.5);
+}
+
+.disclaimer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.first-service,
+.second-service {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left img,
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+}
