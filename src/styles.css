@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+:root {
+  --background-color: #f0f0f0; /* Light mode background color */
+  --text-color: #333; /* Light mode text color */
+  --accent-color: #007bff; /* Light mode accent color */
+}
+
+.dark-mode {
+  --background-color: #121212; /* Dark mode background color */
+  --text-color: #fff; /* Dark mode text color */
+  --accent-color: #ffbb00; /* Dark mode accent color */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

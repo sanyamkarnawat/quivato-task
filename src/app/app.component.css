@@ -1,0 +1,77 @@
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 123, 255, 0.5));
+  }
+  
+  h1 {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Theme switch styles */
+  .theme-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    display: none;
+  }
+  
+  .switch {
+    width: 40px;
+    height: 20px;
+    background-color: var(--text-color); /* Use text color for switch background */
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .switch::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-color); /* Use background color for switch knob */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .checkbox:checked + .switch::after {
+    transform: translateX(20px);
+  }
+  
+  /* Global styles */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .dark-mode {
+    --background-color: #121212; /* Dark mode background color */
+    --text-color: #fff; /* Dark mode text color */
+    --accent-color: #ffbb00; /* Dark mode accent color */
+  }
+  
+  /* Add other global styles here */
+  

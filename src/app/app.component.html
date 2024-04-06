@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="header-content">
+        <img class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/800px-Logo_NIKE.svg.png"
+            alt="Company Logo">
+        <h1>Company Name</h1>
+    </div>
+    <app-tabs></app-tabs>
+    <div class="theme-switch">
+        <input type="checkbox" id="toggle" class="checkbox" [checked]="themeService.getTheme() === 'dark'">
+        <label for="toggle" class="switch" (click)="themeService.toggleTheme()"></label>
+    </div>
+</header>
+
+<router-outlet></router-outlet>

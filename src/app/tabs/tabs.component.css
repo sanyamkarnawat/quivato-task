@@ -1,0 +1,54 @@
+/* Animation for tab hover */
+.tab a {
+    color: var(--text-color);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Added transform for hover animation */
+}
+
+.tab a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten background color on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Animation for tab active */
+.tab a.active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: pulse 1s infinite alternate; /* Pulse animation for active tab */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.tab-group {
+    background-color: var(--background-color); /* Use background color variable */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-label {
+    color: var(--text-color); /* Use text color variable */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-label:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten background color on hover */
+}
+
+.tab.active {
+    background-color: var(--accent-color); /* Use accent color variable for active tab */
+    color: #fff; /* Set text color for active tab */
+}
